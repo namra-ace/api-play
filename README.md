@@ -30,7 +30,6 @@ This project was built as part of a technical assessment and focuses on clean ba
 ---
 # Project Structure
 
-```text
 .
 ├── .gitignore
 ├── package-lock.json
