@@ -23,6 +23,26 @@ fetch("/api/profile")
       const span = document.createElement("span");
       span.className = "chip";
       span.textContent = skill;
+      
+      // --- START UPDATE: Make skills clickable ---
+      span.style.cursor = "pointer"; 
+      span.title = `Filter projects by ${skill}`;
+      
+      span.onclick = async () => {
+        // Visual feedback: clear search to avoid confusion
+        searchInput.value = ""; 
+        searchResults.innerHTML = "";
+        
+        try {
+          const res = await fetch(`/api/projects?skill=${encodeURIComponent(skill)}`);
+          const projects = await res.json();
+          renderProjects(projects, projectsEl);
+        } catch (err) {
+          console.error("Failed to filter by skill:", err);
+        }
+      };
+      // --- END UPDATE ---
+
       skillsEl.appendChild(span);
     });
 
@@ -36,6 +56,11 @@ fetch("/api/profile")
 // Render projects helper
 function renderProjects(projects, container) {
   container.innerHTML = "";
+
+  if (!projects || projects.length === 0) {
+    container.innerHTML = "<p>No projects found.</p>";
+    return;
+  }
 
   projects.forEach(project => {
     const div = document.createElement("div");

@@ -1,5 +1,7 @@
 # Me-API Playground
 
+📄 **Resume:** https://drive.google.com/file/d/15RrrbDNg1Le7y4WAxuCVERfi9-pdIYZr/view?usp=sharing
+
 A full-stack personal profile application exposing a REST API with query endpoints and a minimal frontend to view and search profile data.
 
 This project was built as part of a technical assessment and focuses on clean backend design, query handling, and a simple but functional UI.
@@ -26,6 +28,33 @@ This project was built as part of a technical assessment and focuses on clean ba
 - Fully driven by the hosted backend API
 
 ---
+# Project Structure
+
+```text
+.
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+├── schema.md
+└── src
+    ├── app.js
+    ├── config
+    │   └── db.js
+    ├── controllers
+    │   └── profile.controller.js
+    ├── middleware
+    │   ├── rateLimit.js
+    │   └── validateRequest.js
+    ├── models
+    │   └── profile.model.js
+    ├── public
+    │   ├── index.html
+    │   ├── script.js
+    │   └── styles.css
+    ├── routes
+    │   └── profile.routes.js
+    └── server.js
 
 ## 🛠️ Tech Stack
 
