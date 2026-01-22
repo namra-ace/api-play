@@ -30,6 +30,7 @@ This project was built as part of a technical assessment and focuses on clean ba
 ---
 # Project Structure
 
+```text
 .
 ├── .gitignore
 ├── package-lock.json
@@ -54,6 +55,8 @@ This project was built as part of a technical assessment and focuses on clean ba
     ├── routes
     │   └── profile.routes.js
     └── server.js
+
+```
 
 ## 🛠️ Tech Stack
 
