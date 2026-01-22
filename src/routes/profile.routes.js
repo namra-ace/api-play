@@ -27,8 +27,6 @@ router.post(
   createProfile
 );
 router.put("/profile", updateProfile);
-
-router.get("/projects", getProjects);
 router.get("/search", searchProfile);
 router.get("/projects", (req, res, next) => {
   if (req.query.skill) {
