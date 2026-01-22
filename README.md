@@ -120,6 +120,7 @@ Key points:
 git clone <repository-url>
 cd me-api-playground
 npm install
+```
 
 ## 🌐 Live Links
 
