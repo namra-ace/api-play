@@ -32,7 +32,6 @@ const profileSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// text index for search endpoint
 profileSchema.index({
   name: "text",
   skills: "text",

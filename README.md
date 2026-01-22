@@ -120,3 +120,9 @@ Key points:
 git clone <repository-url>
 cd me-api-playground
 npm install
+
+## 🌐 Live Links
+
+- **Frontend & API:** https://api-play.onrender.com
+- **GitHub:** https://github.com/namra-ace
+- **LinkedIn:** https://linkedin.com/in/namrarajodiya
